@@ -1,0 +1,45 @@
+.dreams {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $light-white;
+  &__title {
+    width: 100%;
+    color: $main-color;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 5rem auto;
+  }
+  &__example {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    height: 30vh;
+  }
+  &__txt {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    align-content: center;
+  }
+  &__example:nth-of-type(even) &__txt {
+    justify-content: left;
+    margin-left: 2rem;
+    text-align: left;
+  }
+  &__example:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+  &__example:nth-of-type(odd) &__txt {
+    justify-content: right;
+    margin-right: 2rem;
+    text-align: right;
+  }
+  &__subtitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  &__description {
+    width: 70%;
+  }
+}
