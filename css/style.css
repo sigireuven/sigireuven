@@ -180,6 +180,50 @@
   width: 70%;
 }
 
+.ad {
+  height: 60vh;
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url(../images/bora-bora.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.ad__txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  color: #fff;
+}
+
+.ad__title {
+  font-family: "dancing script", serif;
+  margin: 3rem;
+  font-size: 3.5rem;
+}
+
+.ad__description {
+  width: 30%;
+  text-align: center;
+  padding: 2rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.islands {
+  height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;

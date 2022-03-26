@@ -1,0 +1,27 @@
+.ad {
+  height: 60vh;
+  background-image: $blue-gradient, url(../images/bora-bora.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  &__txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: $pure-white;
+  }
+  &__title {
+    font-family: "dancing script", serif;
+    margin: 3rem;
+    font-size: 3.5rem;
+  }
+  &__description {
+    width: 30%;
+    text-align: center;
+    padding: 2rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  }
+}
