@@ -1,0 +1,128 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  background-image: url(../images/header_background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #eee;
+  background-color: rgba(8, 24, 255, 0.55);
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__title {
+  font-family: "dancing script", serif;
+  margin: 2rem;
+  font-size: 3.5rem;
+}
+
+.header__subtitle {
+  margin-bottom: 3.5rem;
+}
+
+.btn {
+  color: #2e2e2e;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #eee;
+  border: 1px solid #2e2e2e;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.navigation__burger {
+  position: fixed;
+  font-size: 2rem;
+  top: 10px;
+  right: 20px;
+  padding: 10px;
+  cursor: pointer;
+  color: #eee;
+  z-index: 1;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  background-color: #164dcc;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.navigation__list--active {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.navigation__item {
+  margin: 20px;
+  list-style: none;
+  color: #eee;
+  font-size: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "roboto", sans-serif;
+}
+
+.fa-adversal {
+  font-size: 20px;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

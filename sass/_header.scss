@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  background-image: url(../images/header_background.jpg);
+  background-size: cover;
+  background-position: center;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: $light-white;
+    background-color: rgba(8, 24, 255, 0.55);
+    text-align: center;
+    justify-content: center;
+  }
+  &__title {
+    font-family: "dancing script", serif;
+    margin: 2rem;
+    font-size: 3.5rem;
+  }
+  &__subtitle {
+    margin-bottom: 3.5rem;
+  }
+}
+.btn {
+  color: $dark;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: $light-white;
+  border: 1px solid $dark;
+  border-radius: 10px;
+  cursor: pointer;
+}
