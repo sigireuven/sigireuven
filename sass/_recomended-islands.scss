@@ -1,0 +1,102 @@
+.recomended-islands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 90vh;
+  &__title {
+    width: 100%;
+    text-align: center;
+    margin: 3rem;
+    font-size: 2.5rem;
+    color: $dark;
+  }
+  &__card {
+    display: flex;
+    position: relative;
+    width: 25%;
+    height: 50%;
+    color: $light-white;
+    justify-content: center;
+    perspective: 1000px;
+
+    &:nth-of-type(1) .recomended-islands__front {
+      background-image: $light-blue-gradient, url(../images/bora-card.jpg);
+    }
+    &:nth-of-type(2) .recomended-islands__front {
+      background-image: $light-blue-gradient, url(../images/tik-taki.jpg);
+    }
+    &:nth-of-type(3) .recomended-islands__front {
+      background-image: $light-blue-gradient, url(../images/nim.jpg);
+    }
+    &:hover .recomended-islands__front {
+      transform: rotateY(180deg);
+      opacity: 0;
+    }
+    &:hover .recomended-islands__back {
+      transform: rotateY(0deg);
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+  &__front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+  }
+  &__back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: $blue-gradient-solid;
+    transform: rotateY(-180deg);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+  }
+  &__information {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    color: $light-white;
+  }
+  &__card-title {
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem 0;
+    text-align: center;
+  }
+  &__description {
+    width: 40%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+  }
+  &__btn {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border: 2px solid $light-white;
+    border-radius: 10px;
+    background-color: transparent;
+
+    color: $light-white;
+    cursor: pointer;
+    transition: background-color 1s, border-color 0.5s, color 0.5s;
+    &:hover {
+      color: $dark;
+      background-color: $green-color-hover;
+      border-color: $dark;
+    }
+  }
+}

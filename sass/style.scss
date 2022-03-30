@@ -1,20 +1,7 @@
+@import "./reset";
 @import "./colors";
 @import "./header";
 @import "./navigation";
 @import "./dreams";
 @import "./ad";
-@import "./islands";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "roboto", sans-serif;
-}
-html {
-  font-size: 62.5%;
-  font-family: "roboto", sans-serif;
-}
-.fa-adversal {
-  font-size: 20px;
-  color: black;
-}
+@import "./recomended-islands";

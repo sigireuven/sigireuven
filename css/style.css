@@ -1,3 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "roboto", sans-serif;
+}
+
+.fa-adversal {
+  font-size: 20px;
+  color: black;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,25 +238,142 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-.islands {
-  height: 100vh;
+.recomended-islands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 90vh;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "roboto", sans-serif;
+.recomended-islands__title {
+  width: 100%;
+  text-align: center;
+  margin: 3rem;
+  font-size: 2.5rem;
+  color: #2e2e2e;
 }
 
-html {
-  font-size: 62.5%;
-  font-family: "roboto", sans-serif;
+.recomended-islands__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 25%;
+  height: 50%;
+  color: #eee;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
-.fa-adversal {
-  font-size: 20px;
-  color: black;
+.recomended-islands__card:nth-of-type(1) .recomended-islands__front {
+  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url(../images/bora-card.jpg);
+}
+
+.recomended-islands__card:nth-of-type(2) .recomended-islands__front {
+  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url(../images/tik-taki.jpg);
+}
+
+.recomended-islands__card:nth-of-type(3) .recomended-islands__front {
+  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url(../images/nim.jpg);
+}
+
+.recomended-islands__card:hover .recomended-islands__front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.recomended-islands__card:hover .recomended-islands__back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  opacity: 1;
+  z-index: 1;
+}
+
+.recomended-islands__front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.recomended-islands__back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #1469f1, #2a0ab8);
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  opacity: 0;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
+.recomended-islands__information {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  color: #eee;
+}
+
+.recomended-islands__card-title {
+  width: 100%;
+  font-size: 1.5rem;
+  margin: 2rem 0 3rem 0;
+  text-align: center;
+}
+
+.recomended-islands__description {
+  width: 40%;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.recomended-islands__btn {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #eee;
+  cursor: pointer;
+  -webkit-transition: background-color 1s, border-color 0.5s, color 0.5s;
+  transition: background-color 1s, border-color 0.5s, color 0.5s;
+}
+
+.recomended-islands__btn:hover {
+  color: #2e2e2e;
+  background-color: #0fe29c;
+  border-color: #2e2e2e;
 }
 /*# sourceMappingURL=style.css.map */
