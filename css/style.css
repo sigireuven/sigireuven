@@ -456,4 +456,84 @@ html {
   border-radius: 10px;
   cursor: pointer;
 }
+
+.opinions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 3rem auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  min-height: 30vh;
+  overflow: hidden;
+}
+
+.opinions__title {
+  width: 100%;
+  margin: 2rem;
+  text-align: center;
+}
+
+.opinions__btn {
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #2e2e2e;
+  background-color: transparent;
+}
+
+.opinions__previous {
+  top: 50%;
+  left: 0;
+}
+
+.opinions__next {
+  top: 50%;
+  right: 0;
+}
+
+.opinions__opinion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  height: 100%;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.opinions--active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.opinions__image {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.opinions__signature {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-align: right;
+}
 /*# sourceMappingURL=style.css.map */

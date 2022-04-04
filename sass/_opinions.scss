@@ -1,0 +1,58 @@
+.opinions {
+  display: flex;
+  position: relative;
+  margin: 3rem auto;
+  flex-wrap: wrap;
+  width: 50%;
+  min-height: 30vh;
+  overflow: hidden;
+  &__title {
+    width: 100%;
+    margin: 2rem;
+    text-align: center;
+  }
+  &__btn {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $dark;
+    background-color: transparent;
+  }
+  &__previous {
+    top: 50%;
+    left: 0;
+  }
+  &__next {
+    top: 50%;
+    right: 0;
+  }
+  &__opinion {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    transform: translateX(-150%);
+    transition: transform 0.5s;
+  }
+  &--active {
+    transform: translateX(0);
+  }
+  &__image {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+  }
+  &__signature {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: right;
+  }
+}
