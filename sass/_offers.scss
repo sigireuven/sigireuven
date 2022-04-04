@@ -1,0 +1,54 @@
+.offers {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-image: $light-blue-gradient, url(../images/palm.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  &__title {
+    font-size: 3rem;
+    margin: 2rem 0 4rem 0;
+    text-align: center;
+    width: 100%;
+    color: $light-white;
+  }
+  &__offer {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    margin: 2rem;
+
+    width: 50%;
+  }
+  &__offer:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  &__image {
+    width: 50%;
+    margin-right: 2rem;
+  }
+  &__txt {
+    display: flex;
+    flex-wrap: wrap;
+    color: $light-white;
+    justify-content: center;
+  }
+  &__name {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  &__btn {
+    margin-top: 3rem;
+    color: $dark;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: $light-white;
+    border: 1px solid $dark;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
