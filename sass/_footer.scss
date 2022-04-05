@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: "dancing script", serif;
+  min-height: 10vh;
+  text-align: center;
+  font-size: 2rem;
+  color: $light-white;
+  background-color: $dark;
+  &__txt {
+    font-family: "dancing script", serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+}
+.fa-copyright {
+  //   display: flex;
+  margin-right: 1.5rem;
+}

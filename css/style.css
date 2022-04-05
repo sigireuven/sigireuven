@@ -471,8 +471,9 @@ html {
 }
 
 .opinions__title {
+  font-size: 2.5rem;
   width: 100%;
-  margin: 2rem;
+  margin: 3rem;
   text-align: center;
 }
 
@@ -511,17 +512,13 @@ html {
           flex-direction: column;
   width: 70%;
   height: 100%;
-  -webkit-transform: translateX(-150%);
-          transform: translateX(-150%);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .opinions--active {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  opacity: 1;
 }
 
 .opinions__image {
@@ -535,5 +532,86 @@ html {
   margin-top: 2rem;
   font-size: 1.5rem;
   text-align: right;
+}
+
+.contakt {
+  min-height: 50vh;
+  background-color: #eee;
+  padding-top: 2rem;
+}
+
+.contakt__title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 3rem 0;
+  color: #164dcc;
+}
+
+.contakt__description {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #2e2e2e;
+}
+
+.contakt__email, .contakt__name, .contakt__message, .contakt__btn-container {
+  width: 30%;
+  margin: 2rem auto 0;
+  padding-bottom: 1rem;
+}
+
+.contakt__input-email, .contakt__input-name, .contakt__input-message {
+  width: 100%;
+}
+
+.contakt__btn-container {
+  text-align: right;
+}
+
+.contakt__btn {
+  color: #2e2e2e;
+  background-color: #eee;
+  padding: 1.5rem 3rem;
+  border: 2px solid #2e2e2e;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.contakt__btn:hover {
+  background-color: #2e2e2e;
+  color: #eee;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "dancing script", serif;
+  min-height: 10vh;
+  text-align: center;
+  font-size: 2rem;
+  color: #eee;
+  background-color: #2e2e2e;
+}
+
+.footer__txt {
+  font-family: "dancing script", serif;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fa-copyright {
+  margin-right: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

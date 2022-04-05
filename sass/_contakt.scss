@@ -1,0 +1,48 @@
+.contakt {
+  min-height: 50vh;
+  background-color: $light-white;
+  //   text-align: center;
+  padding-top: 2rem;
+  &__title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 3rem 0;
+    color: $secondary-color;
+  }
+  &__description {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: $dark;
+  }
+  &__email,
+  &__name,
+  &__message,
+  &__btn-container {
+    width: 30%;
+    // height: 60px;
+    margin: 2rem auto 0;
+    padding-bottom: 1rem;
+  }
+  &__input-email,
+  &__input-name,
+  &__input-message {
+    width: 100%;
+    // height: 60px;
+  }
+  &__btn-container {
+    text-align: right;
+  }
+  &__btn {
+    color: $dark;
+    background-color: $light-white;
+    padding: 1.5rem 3rem;
+    border: 2px solid $dark;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+  }
+  &__btn:hover {
+    background-color: $dark;
+    color: $light-white;
+  }
+}
